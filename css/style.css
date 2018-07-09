@@ -1,0 +1,435 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+/* NAV HEADER BEGINS */
+
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  height: 10%;
+  padding: 1%;
+  background-color: white;
+  display: flex;  
+
+}
+
+.logo {
+  height: 4rem;
+  padding-left: 5rem;
+  
+}
+
+.main-nav-menu {
+
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  width: 300px;
+  justify-content: center;
+  padding-right: 6rem;
+  
+
+}
+
+.main-nav-menu a {
+
+  text-transform: uppercase;
+  color: #e2574c;  
+  text-decoration: none; 
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+  padding-right: 2rem;
+  
+
+}
+
+li {
+  list-style-type: none;
+}
+
+.cart-img  {
+
+  display: flex;
+  height: 4rem;
+  padding-right: 8rem;
+  
+}
+
+/* NAV HEADER ENDS */
+
+
+/* BANNER SECTION BEGINS */
+
+.banner {
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2), 
+    rgba(0,0,0,0.2) 
+    ), 
+    url(../images/banner-girl.png), 
+    url(../images/flower-bkgd.jpg);
+
+  background-size: cover, 250px, contain;
+  background-repeat: repeat, no-repeat;
+  background-position: center, center 160px, center;
+  height: 650px;
+
+  
+  text-align: center;
+  color: white;
+}
+
+.banner-collection {
+  
+  font-size: 25px;
+  padding-top: 330px;
+  font-size: 20px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  
+}
+
+.banner-season {
+  
+  display: block;
+  font-family: 'Playfair Display';
+  font-size: 60px;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  
+  
+}
+
+/* END OF BANNER SECTION */
+
+/* ABOUT SECTION BEGINS */
+
+.middle {
+
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.middle h3 {
+  font-size: 35px;
+  line-height: 20px;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: normal;
+  color: #2d2d2d;
+  letter-spacing: 0.7px;
+}
+
+.middle p {
+  font-size: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  color: #2d2d2d;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px; 
+
+}
+
+/* END OF ABOUT SECTION */
+
+
+/* SHOP SECTION BEGINS */
+
+.shop-section {
+ 
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+.mens {
+
+  position: relative;
+  text-align: center;
+  color: white; 
+  margin: 0;
+  border-right: solid 5px white;
+  
+}
+
+.mens img {
+  width: 40rem;
+  
+}
+
+.mens-centered {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  
+}
+
+.trends {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-right: solid 5px white;
+  
+ 
+  
+}
+
+.trends-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.trends img {
+  width: 20rem;
+}
+
+.glasses {
+  position: relative;
+  text-align: center;
+  color: white;
+  
+  
+}
+
+.glasses-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.glasses img {
+  width: 20rem;
+}
+
+.sale {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-right: solid 5px white;
+  
+  
+}
+
+.sale-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.sale img {
+  width: 20rem;
+}
+
+.bags {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-right: solid 5px white;
+  
+  
+}
+
+.bags-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.bags img {
+  width: 20rem;
+  
+}
+
+
+
+.womens {
+  position: relative;
+  text-align: center;
+  color: white;
+  
+  
+}
+
+.womens-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.womens img {
+  width: 40rem;
+}
+
+.shop-section div:hover {
+  color: #f5ebc6;
+}
+
+/* END OF SHOP SECTION  */
+
+/* NEWSLETTER SECTION BEGINS */
+
+.updates {
+  background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),
+  url(../images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
+}
+
+.updates span {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+}
+
+.updates p {
+
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2rem;
+  color: white;
+  font-size: 18px;
+  
+}
+
+input[type="email"] {
+
+  border-radius: 20px;
+  padding-right: 120px;
+  height: 25px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+}
+
+input[type="submit"]  {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 25px;
+  background-color: #e2574c;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+input[type="submit"]:hover {
+  background-color: crimson;
+}
+
+
+/* NEWSLETTER SECTION ENDS */
+
+
+/* FOOTER BEGINS */
+
+footer {
+  border-top: solid white 8px;
+  background-color: #242424;
+  color: white;
+  padding-top: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+
+.company-info {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+  padding-left: 5rem;
+}
+
+.company-info p {
+  color: #969696;
+}
+
+.social-media {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  padding-right: 7rem;
+  
+  display: flex;
+  flex-direction: column;  
+}
+
+
+ .company-info a:link {
+   color: white;
+ }
+
+ .company-info a:visited {
+   color: white;
+ }
+
+
+ .company-info a:hover {
+  color: #e2574c;
+ }
+
+ /* FOOTER ENDS */
