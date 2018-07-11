@@ -1,9 +1,9 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   font-size: 1rem;
 }
-
-
 
 /* NAV HEADER BEGINS */
 
@@ -11,42 +11,52 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   height: 15%;
-  padding: 1%;
   background-color: white;
-  display: flex;  
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .logo {
-  height: 4rem;
-  padding-left: 5rem;
+  order: 1;
+  height: 70px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.cart-img {
+  order: 2;
+  display: flex;
+  height: 70px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   
 }
 
 .main-nav-menu {
-
+  order: 3;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
   margin: auto;
-  width: 300px;
-  justify-content: center;
-  padding-right: 6rem;
-  
+  width: 100%;
+  padding: 2%;
+  border-top: 1px solid #eee;
 
 }
 
 .main-nav-menu a {
-
   text-transform: uppercase;
-  color: #e2574c;  
-  text-decoration: none; 
-  font-family: 'Raleway';
+  color: #e2574c;
+  text-decoration: none;
+  font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
-  padding-right: 2rem;
-  
+  font-size: 14px;
 
 }
 
@@ -54,58 +64,41 @@ li {
   list-style-type: none;
 }
 
-.cart-img  {
-
-  display: flex;
-  height: 4rem;
-  padding-right: 8rem;
-  
-}
-
 /* NAV HEADER ENDS */
-
 
 /* BANNER SECTION BEGINS */
 
 .banner {
-
   background-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.2), 
-    rgba(0,0,0,0.2) 
-    ), 
-    url(../images/banner-girl.png), 
-    url(../images/flower-bkgd.jpg);
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
 
-  background-size: cover, 250px, contain;
-  background-repeat: repeat, no-repeat;
-  background-position: center, center 160px, center;
-  height: 650px;
+  background-size: cover, 200px, cover;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-position: center, center 120px, center;
+  height: 500px;
 
-  
   text-align: center;
   color: white;
 }
 
 .banner-collection {
-  
   font-size: 25px;
-  padding-top: 330px;
+  padding-top: 270px;
   font-size: 20px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
-  
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 }
 
 .banner-season {
-  
   display: block;
-  font-family: 'Playfair Display';
-  font-size: 60px;
-  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
-  
-  
+  font-family: "Playfair Display";
+  font-size: 45px;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 }
 
 /* END OF BANNER SECTION */
@@ -113,97 +106,111 @@ li {
 /* ABOUT SECTION BEGINS */
 
 .about-container {
-text-align: center;
-width: 100%;
-padding: 5%;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 75px;
 
 }
 
 .font-italic {
   line-height: 20px;
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: normal;
   font-style: normal;
   font-size: 40px;
   font-style: italic;
   padding-right: 10px;
   color: #2d2d2d;
+
 }
 
 .font-bold {
-
-  line-height: 20px;
-  font-family: 'Playfair Display';
+  line-height: 16px;
+  font-family: "Playfair Display";
   font-weight: bold;
   font-style: normal;
   color: #2d2d2d;
   font-size: 40px;
+  
 }
 
-.about-container  p {
+.about-container p {
   line-height: 30px;
-  font-size: 20px;
-  font-family: 'Raleway';
+  font-size: 15px;
+  font-family: "Raleway";
   font-weight: 300;
   font-style: normal;
   color: #2d2d2d;
+  
 }
 
 /* END OF ABOUT SECTION */
 
-
 /* SHOP SECTION BEGINS */
 
 .shop-section {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-width: 100%;
-height: 40rem;
-background-color: #e2574c;
-
+  width: 100%;
+  height: 40rem;
 }
 
 .mens {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50%;
-height: 50%;
-  
-background-image: url(../images/mens-category.jpg);
-background-repeat: no-repeat;
-background-size: contain;
-  
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/mens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
 }
 
 .mens a {
-font-size: 2.5rem;
-text-decoration: none;
-color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
-
 .trends {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 25%;
-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
 
-background-image: url(../images/trends-category.jpg);
-background-size: contain;
-background-repeat: no-repeat;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/trends-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
 }
 
 .trends a {
@@ -213,99 +220,125 @@ text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
 .glasses {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 25%;
-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
 
-background-image: url(../images/glasses-category.jpg);
-background-size: contain;
-background-repeat: no-repeat;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/glasses-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-bottom: 7px solid white;
 }
 
 .glasses a {
-font-size: 2.5rem;
-text-decoration: none;
-color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .sale {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 25%;
-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
 
-background-image: url(../images/sale-category.jpg);
-background-size: contain;
-background-repeat: no-repeat;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/sale-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
 }
 
 .sale a {
-font-size: 2.5rem;
-text-decoration: none;
-color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .bags {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 25%;
-height: 50%;
- 
-background-image: url(../images/bags-category.jpg);
-background-size: contain;
-background-repeat: no-repeat;
-  
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/bags-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
 }
 
 .bags a {
-font-size: 2.5rem;
-text-decoration: none;
-color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .womens {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50%;
-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
 
-background-image: url(../images/womens-category.jpg);
-background-repeat: no-repeat;
-background-size: contain;
-  
-font-family: 'Raleway';
-color: white;
-font-style: normal;
-text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/womens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-bottom: 7px solid white;
 }
 
 .womens a {
-font-size: 2.5rem;
-text-decoration: none;
-color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .shop-section a:hover {
-color:#f5ebc6;
+  color: #f5ebc6;
 }
 
 /* END OF SHOP SECTION  */
@@ -317,42 +350,38 @@ color:#f5ebc6;
 }
 
 .featured-products h2 {
-
-text-transform: uppercase;
-font-family: 'Raleway';
-font-weight: 500;
-font-style: normal;
-color: #d7d7d7;
-}
-
-.featured-products p {
-
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
   color: #d7d7d7;
-  }
+}
+
+.featured-products p {
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: #d7d7d7;
+}
 
 .featured-products h3 {
-
-color: #e2574c;
-font-family: 'Playfair Display';
-font-weight: normal;
-font-size: 1.5rem;
+  color: #e2574c;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 /* NEWSLETTER SECTION BEGINS */
 
 .updates {
-  background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),
-  url(../images/wave-bkgd.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(../images/wave-bkgd.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
-  
 }
 
 .updates span {
@@ -360,132 +389,368 @@ font-size: 1.5rem;
 }
 
 .updates p {
-
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 300;
   font-style: normal;
   line-height: 2rem;
   color: white;
   font-size: 18px;
-  
+}
+
+.subscribe-form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 input[type="email"] {
+  height: 3rem;
+  width: 70%;
 
   border-radius: 20px;
-  padding-right: 120px;
-  height: 25px;
-  font-family: 'Raleway';
-  font-weight: 500;
+  box-shadow: inset 0;
+
+  font-family: "Raleway";
+  font-weight: 300;
   font-style: normal;
+  padding-left: 20px;
 }
 
-input[type="submit"]  {
-  border-radius: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 25px;
+input[type="submit"] {
+  border-radius: 25px;
   background-color: #e2574c;
   color: white;
+
   font-weight: bold;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
+  
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  right: 16%;
+  border: 0;
+  
+}
 
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 input[type="submit"]:hover {
-  background-color: crimson;
+  background-color: #b64036;
+  cursor: pointer;
 }
 
-
 /* NEWSLETTER SECTION ENDS */
-
 
 /* FOOTER BEGINS */
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   
+
   border-top: solid white 8px;
   background-color: #242424;
   color: white;
-  
+
   padding-top: 3rem;
   padding-bottom: 3rem;
-  
 }
 
 .company-info {
   display: block;
-  padding-left: 5rem;
+  text-align: center;
+  order: 1;
 
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-weight: normal;
   font-style: normal;
   font-size: 1rem;
-  line-height: 1.5rem;
-  
 }
 
 .company-info p {
   color: #969696;
 }
 
-.social-media  {
+.social-media {
   display: flex;
-  flex-direction: column;  
+  flex-direction: row;
   justify-content: space-around;
-  padding-right: 10rem;
-
+  align-items: center;
+  order: 2;
+  
+  
 }
 
 .social-media span {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   padding-left: 5px;
-
+  
 }
 
-
- .company-info a:link {
-   color: white;
- }
-
- .company-info a:visited {
-   color: white;
- }
-
- .company-info a:hover {
-  color: #e2574c;
- }
-
- .social-media a:link {
-  color: white;
- }
-
- .social-media a:visited {
-  color: white;
- }
-
- .social-media a:hover {
-  color: #e2574c;
- }
-
-
- /* FOOTER ENDS */
-
-
-
- @media screen and (min-width: 600px) {
-  body {
-   
-  }
+.social-media  a {
+  text-decoration: none;
 }
 
-@media screen and (min-width: 900px) {
-  body {
+.social-media .fab {
+  width: 32px;
+}
+
+.company-info a:link {
+  color: white;
+}
+
+.company-info a:visited {
+  color: white;
+}
+
+.company-info a:hover {
+  color: #e2574c;
+}
+
+.social-media a:link {
+  color: white;
+}
+
+.social-media a:visited {
+  color: white;
+}
+
+.social-media a:hover {
+  color: #e2574c;
+}
+
+/* FOOTER ENDS */
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 640px) {
+
+  /* MAIN TOP NAV */
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 13%;
+    width: 100%;
+
+    background-color: white;
+    display: flex;
+    align-items: center;
   
   }
+  
+  .main-nav-menu {
+  order: 2;
+  border-top: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  }
+
+  .main-nav-menu a {
+    text-transform: uppercase;
+    color: #e2574c;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding-right: 2rem;
+    
+  }
+
+  .logo {
+    order: 1;
+    height: 7rem;
+    width: 25%;
+
+  }
+ 
+  .cart-img {
+    order: 3;
+    height: 7.5rem;
+    width: 25%;
+    } 
+
+    /* END OF MAIN TOP NAV */
+
+
+    
+/* BANNER */
+
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+
+  background-size: cover, 250px, contain;
+  background-repeat: repeat, no-repeat;
+  background-position: center, center 160px, center;
+  height: 650px;
+
+  text-align: center;
+  color: white;
+}
+
+.banner-collection {
+  font-size: 25px;
+  padding-top: 330px;
+  font-size: 20px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+}
+
+.banner-season {
+  display: block;
+  font-family: "Playfair Display";
+  font-size: 60px;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+}
+
+/* END OF BANNER SECTION */
+
+
+/* ABOUT SECTION BEGINS */
+
+.about-container {
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.font-italic {
+  line-height: 20px;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  font-style: italic;
+  padding-right: 10px;
+  color: #2d2d2d;
+}
+
+.font-bold {
+  line-height: 20px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: normal;
+  color: #2d2d2d;
+  font-size: 40px;
+}
+
+.about-container p {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: #2d2d2d;
+}
+
+/* END OF ABOUT SECTION */
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER BEGINS */
+
+.footer-container {
+  display: flex;
+  /* justify-content: space-between; */
+
+  border-top: solid white 8px;
+  background-color: #242424;
+  color: white;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.company-info {
+  display: block;
+  padding-left: 5rem;
+
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.company-info p {
+  color: #969696;
+}
+
+.social-media {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10rem;
+  
+}
+
+.social-media span {
+  font-family: "Raleway";
+  font-weight: 500;
+  padding-left: 5px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+/* .fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 15%;
+  padding: 1%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+*/
+
+
+
+@media screen and (min-width: 900px) {
+
+
 }
