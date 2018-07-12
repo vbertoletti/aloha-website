@@ -21,9 +21,8 @@
 
 .logo {
   order: 1;
-  height: 70px;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  height: 50px;
+  margin: 10px;
 }
 
 .cart-img {
@@ -76,7 +75,7 @@ li {
     ),
     url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
 
-  background-size: cover, 200px, cover;
+  background-size: contain, 200px, cover;
   background-repeat: repeat, no-repeat, no-repeat;
   background-position: center, center 120px, center;
   height: 500px;
@@ -88,7 +87,7 @@ li {
 .banner-collection {
   font-size: 25px;
   padding-top: 270px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Raleway";
   text-transform: uppercase;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
@@ -97,7 +96,7 @@ li {
 .banner-season {
   display: block;
   font-family: "Playfair Display";
-  font-size: 45px;
+  font-size: 42px;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 }
 
@@ -108,7 +107,7 @@ li {
 .about-container {
   text-align: center;
   width: 100%;
-  height: 250px;
+  height: 280px;
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 75px;
@@ -120,10 +119,11 @@ li {
   font-family: "Playfair Display";
   font-weight: normal;
   font-style: normal;
-  font-size: 40px;
+  font-size: 35px;
   font-style: italic;
   padding-right: 10px;
   color: #2d2d2d;
+ 
 
 }
 
@@ -133,7 +133,8 @@ li {
   font-weight: bold;
   font-style: normal;
   color: #2d2d2d;
-  font-size: 40px;
+  font-size: 35px;
+  
   
 }
 
@@ -144,6 +145,7 @@ li {
   font-weight: 300;
   font-style: normal;
   color: #2d2d2d;
+  
   
 }
 
@@ -160,6 +162,546 @@ li {
 }
 
 .mens {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/mens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
+}
+
+.mens a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.trends {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/trends-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
+}
+
+.trends a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.glasses {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/glasses-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-bottom: 7px solid white;
+}
+
+.glasses a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/sale-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
+}
+
+.sale a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.bags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/bags-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white;
+}
+
+.bags a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.womens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/womens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  border-bottom: 7px solid white;
+}
+
+.womens a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.shop-section a:hover {
+  color: #f5ebc6;
+}
+
+/* END OF SHOP SECTION  */
+
+.featured-products {
+  width: 100%;
+  text-align: center;
+  padding-top: 40%;
+}
+
+.featured-products h2 {
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: #d7d7d7;
+}
+
+.featured-products p {
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  color: #d7d7d7;
+}
+
+.featured-products h3 {
+  color: #e2574c;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+/* NEWSLETTER SECTION BEGINS */
+
+.updates {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(../images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  padding-top: 30px;
+  height: 300px;
+}
+
+.updates span {
+  color: white;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+
+}
+
+.updates p {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2rem;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.subscribe-form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="email"] {
+  height: 2.5rem;
+  width: 85%;
+
+  border-radius: 60px;
+  box-shadow: inset 0;
+
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 20px;
+  border: 0;
+}
+
+input[type="submit"] {
+  border-radius: 25px;
+  background-color: #e2574c;
+  color: white;
+
+  font-weight: bold;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  right: 8.5%;
+  border: 0;
+  
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #b64036;
+  cursor: pointer;
+  
+}
+
+/* NEWSLETTER SECTION ENDS */
+
+/* FOOTER BEGINS */
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+  border-top: solid white 8px;
+  background-color: #242424;
+  color: white;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.company-info {
+  display: block;
+  text-align: center;
+  order: 1;
+
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.company-info p {
+  color: #969696;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  order: 2;
+  
+  
+}
+
+.social-media span {
+  display: none;
+  font-family: "Raleway";
+  font-weight: 500;
+  padding-left: 5px;
+  
+}
+
+.social-media  a {
+  text-decoration: none;
+}
+
+.social-media .fab {
+  width: 32px;
+}
+
+.company-info a:link {
+  color: white;
+}
+
+.company-info a:visited {
+  color: white;
+}
+
+.company-info a:hover {
+  color: #e2574c;
+}
+
+.social-media a:link {
+  color: white;
+}
+
+.social-media a:visited {
+  color: white;
+}
+
+.social-media a:hover {
+  color: #e2574c;
+}
+
+/* FOOTER ENDS */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+  /* MAIN TOP NAV */
+  .fixed-nav {
+    height: 13%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  
+  }
+  
+  .main-nav-menu {
+  order: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  border-top: none;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  }
+
+  .main-nav-menu a {
+    padding-right: 2rem;
+    
+  }
+
+  .logo {
+    order: 1;
+    height: 7rem;
+    width: 25%;
+
+  }
+ 
+  .cart-img {
+    order: 3;
+    height: 7.5rem;
+    width: 25%;
+    } 
+
+    /* END OF MAIN TOP NAV */
+
+
+    
+/* BANNER */
+
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+
+  background-size: cover, 250px, contain;
+  background-repeat: no-repeat;
+  background-position: center, center 160px, center;
+  height: 650px;
+
+  text-align: center;
+  color: white;
+}
+
+.banner-collection {
+  font-size: 25px;
+  padding-top: 330px;
+  font-size: 20px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+}
+
+.banner-season {
+  display: block;
+  font-family: "Playfair Display";
+  font-size: 60px;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+}
+
+/* END OF BANNER SECTION */
+
+
+/* ABOUT SECTION BEGINS */
+
+.about-container {
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.font-italic {
+  line-height: 20px;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  font-style: italic;
+  padding-right: 10px;
+  color: #2d2d2d;
+}
+
+.font-bold {
+  line-height: 20px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: normal;
+  color: #2d2d2d;
+  font-size: 40px;
+}
+
+.about-container p {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  color: #2d2d2d;
+}
+
+/* END OF ABOUT SECTION */
+
+
+
+/* SHOP SECTION BEGINS */
+
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 40rem;
+}
+
+.mens {
+
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +732,7 @@ li {
 }
 
 .trends {
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,6 +763,7 @@ li {
 }
 
 .glasses {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,334 +887,6 @@ li {
 
 /* END OF SHOP SECTION  */
 
-.featured-products {
-  width: 100%;
-  text-align: center;
-  padding-top: 5%;
-}
-
-.featured-products h2 {
-  text-transform: uppercase;
-  font-family: "Raleway";
-  font-weight: 500;
-  font-style: normal;
-  color: #d7d7d7;
-}
-
-.featured-products p {
-  text-transform: uppercase;
-  font-family: "Raleway";
-  font-weight: 500;
-  font-style: normal;
-  color: #d7d7d7;
-}
-
-.featured-products h3 {
-  color: #e2574c;
-  font-family: "Playfair Display";
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-
-/* NEWSLETTER SECTION BEGINS */
-
-.updates {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(../images/wave-bkgd.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.updates span {
-  color: white;
-}
-
-.updates p {
-  font-family: "Raleway";
-  font-weight: 300;
-  font-style: normal;
-  line-height: 2rem;
-  color: white;
-  font-size: 18px;
-}
-
-.subscribe-form {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-input[type="email"] {
-  height: 3rem;
-  width: 70%;
-
-  border-radius: 20px;
-  box-shadow: inset 0;
-
-  font-family: "Raleway";
-  font-weight: 300;
-  font-style: normal;
-  padding-left: 20px;
-}
-
-input[type="submit"] {
-  border-radius: 25px;
-  background-color: #e2574c;
-  color: white;
-
-  font-weight: bold;
-  font-family: "Raleway";
-  font-weight: 500;
-  font-style: normal;
-  
-  padding: 0.5rem 1.5rem;
-  position: absolute;
-  right: 16%;
-  border: 0;
-  
-}
-
-.email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-input[type="submit"]:hover {
-  background-color: #b64036;
-  cursor: pointer;
-}
-
-/* NEWSLETTER SECTION ENDS */
-
-/* FOOTER BEGINS */
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-
-  border-top: solid white 8px;
-  background-color: #242424;
-  color: white;
-
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.company-info {
-  display: block;
-  text-align: center;
-  order: 1;
-
-  font-family: "Playfair Display";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem;
-}
-
-.company-info p {
-  color: #969696;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  order: 2;
-  
-  
-}
-
-.social-media span {
-  font-family: "Raleway";
-  font-weight: 500;
-  padding-left: 5px;
-  
-}
-
-.social-media  a {
-  text-decoration: none;
-}
-
-.social-media .fab {
-  width: 32px;
-}
-
-.company-info a:link {
-  color: white;
-}
-
-.company-info a:visited {
-  color: white;
-}
-
-.company-info a:hover {
-  color: #e2574c;
-}
-
-.social-media a:link {
-  color: white;
-}
-
-.social-media a:visited {
-  color: white;
-}
-
-.social-media a:hover {
-  color: #e2574c;
-}
-
-/* FOOTER ENDS */
-
-
-
-
-
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 640px) {
-
-  /* MAIN TOP NAV */
-  .fixed-nav {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    height: 13%;
-    width: 100%;
-
-    background-color: white;
-    display: flex;
-    align-items: center;
-  
-  }
-  
-  .main-nav-menu {
-  order: 2;
-  border-top: none;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: auto;
-  width: 50%;
-  justify-content: center;
-  }
-
-  .main-nav-menu a {
-    text-transform: uppercase;
-    color: #e2574c;
-    text-decoration: none;
-    font-family: "Raleway";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    padding-right: 2rem;
-    
-  }
-
-  .logo {
-    order: 1;
-    height: 7rem;
-    width: 25%;
-
-  }
- 
-  .cart-img {
-    order: 3;
-    height: 7.5rem;
-    width: 25%;
-    } 
-
-    /* END OF MAIN TOP NAV */
-
-
-    
-/* BANNER */
-
-.banner {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-
-  background-size: cover, 250px, contain;
-  background-repeat: repeat, no-repeat;
-  background-position: center, center 160px, center;
-  height: 650px;
-
-  text-align: center;
-  color: white;
-}
-
-.banner-collection {
-  font-size: 25px;
-  padding-top: 330px;
-  font-size: 20px;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-}
-
-.banner-season {
-  display: block;
-  font-family: "Playfair Display";
-  font-size: 60px;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-}
-
-/* END OF BANNER SECTION */
-
-
-/* ABOUT SECTION BEGINS */
-
-.about-container {
-  text-align: center;
-  width: 100%;
-  padding: 5%;
-}
-
-.font-italic {
-  line-height: 20px;
-  font-family: "Playfair Display";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 40px;
-  font-style: italic;
-  padding-right: 10px;
-  color: #2d2d2d;
-}
-
-.font-bold {
-  line-height: 20px;
-  font-family: "Playfair Display";
-  font-weight: bold;
-  font-style: normal;
-  color: #2d2d2d;
-  font-size: 40px;
-}
-
-.about-container p {
-  line-height: 30px;
-  font-size: 20px;
-  font-family: "Raleway";
-  font-weight: 300;
-  font-style: normal;
-  color: #2d2d2d;
-}
-
-/* END OF ABOUT SECTION */
-
-
-
-
 
 
 
@@ -721,11 +937,6 @@ input[type="submit"]:hover {
   padding-left: 5px;
   
 }
-
-
-
-
-
 
 
 
