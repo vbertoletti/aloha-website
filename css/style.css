@@ -828,6 +828,10 @@ input[type="submit"]:hover {
   color: #e2574c;
 }
 
+.company-info li {
+  margin-bottom: 15px;
+}
+
 .social-media a:link {
   color: white;
 }
