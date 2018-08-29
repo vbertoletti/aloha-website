@@ -22,19 +22,24 @@ $(document).ready(function() {
   
   
   var itemCount = 0;
+  $('.remove-items').hide();
+
   $('.add-to-cart-button').click(function (){
+    $('.remove-items').show();
    
     itemCount ++;
     $('#itemCount').html(itemCount).css('display', 'block');
+    
   }); 
 
-  // Removing items from cart on button click. Also re-setting the items# back to zero and removing the items count from the cart icon. 
+  // Removing items from cart on button click. Also re-setting the items# back to zero, removing the items count from the cart icon and removing the button. 
 
-  $('#remove-items').on('click', function() {
+  $('.remove-items').on('click', function() {
     itemCount = 0;
     $('#itemCount').html('').css('display', 'none');
+    $('.remove-items').hide();
 
-});
+  });
 
 
 // Select all links with hashes
