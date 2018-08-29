@@ -1,0 +1,15 @@
+
+//Media queries 
+
+@mixin tablet-size {
+  @media screen and (min-width: $tablet-min-width) {
+	  @content;
+	}
+}
+
+@mixin desktop-size {
+  @media screen and (min-width: $desktop-min-width) {
+	  @content;
+	}
+  
+}

@@ -1,0 +1,1055 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-MediumItalic.eot");
+  src: url("../fonts/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.ttf") format("truetype"), url("../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-LightItalic.eot");
+  src: url("../fonts/Raleway-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-LightItalic.woff2") format("woff2"), url("../fonts/Raleway-LightItalic.ttf") format("truetype"), url("../fonts/Raleway-LightItalic.svg#Raleway-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.ttf") format("truetype"), url("../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Italic.eot");
+  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1rem; }
+
+li {
+  list-style-type: none; }
+
+/* NAV HEADER BEGINS */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (min-width: 600px) {
+    .fixed-nav {
+      height: 80px;
+      flex-wrap: nowrap; } }
+
+.logo-container {
+  width: 50%;
+  padding: 0.5rem; }
+  @media screen and (min-width: 600px) {
+    .logo-container {
+      order: 1;
+      width: 25%;
+      padding-left: 15px; } }
+  @media screen and (min-width: 900px) {
+    .logo-container {
+      padding-left: 5rem; } }
+
+.logo {
+  order: 1;
+  max-width: 120px; }
+  @media screen and (min-width: 900px) {
+    .logo {
+      max-width: 170px; } }
+
+.cart-img-wrapper {
+  order: 2;
+  text-align: right;
+  width: 50%;
+  padding: 0.5rem; }
+  @media screen and (min-width: 600px) {
+    .cart-img-wrapper {
+      order: 3;
+      width: 25%;
+      padding-right: 15px; } }
+  @media screen and (min-width: 900px) {
+    .cart-img-wrapper {
+      padding-right: 5rem; } }
+  .cart-img-wrapper img {
+    max-width: 50px; }
+    @media screen and (min-width: 900px) {
+      .cart-img-wrapper img {
+        max-width: 65px; } }
+
+.main-nav-menu {
+  order: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding: 2%;
+  border-top: 1px solid #eee; }
+  .main-nav-menu a {
+    text-transform: uppercase;
+    color: #e2574c;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px; }
+    @media screen and (min-width: 600px) {
+      .main-nav-menu a {
+        padding-right: 1rem; } }
+    @media screen and (min-width: 900px) {
+      .main-nav-menu a {
+        padding-right: 2rem; } }
+  @media screen and (min-width: 600px) {
+    .main-nav-menu {
+      order: 2;
+      border-top: none;
+      margin: auto;
+      width: 50%;
+      justify-content: center;
+      padding-left: 50px; } }
+
+/* NAV HEADER ENDS */
+/* BANNER SECTION BEGINS */
+.banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
+  background-size: contain, 150px, cover;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-position: center, center 150px, center;
+  height: 500px;
+  text-align: center;
+  color: white; }
+  @media screen and (min-width: 600px) {
+    .banner {
+      background-size: cover, 250px, cover;
+      background-repeat: no-repeat;
+      background-position: center, center 160px, center;
+      height: 650px; } }
+
+.banner-collection {
+  font-size: 25px;
+  padding-top: 270px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8); }
+  @media screen and (min-width: 600px) {
+    .banner-collection {
+      font-size: 25px;
+      padding-top: 330px;
+      font-size: 20px; } }
+
+.banner-season {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8); }
+  @media screen and (min-width: 600px) {
+    .banner-season {
+      display: block;
+      font-size: 60px; } }
+
+/* END OF BANNER SECTION */
+/* ABOUT SECTION BEGINS */
+.about-container {
+  text-align: center;
+  width: 100%;
+  height: 280px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 75px; }
+  @media screen and (min-width: 600px) {
+    .about-container {
+      text-align: center;
+      width: 100%; } }
+  .about-container p {
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #2d2d2d; }
+    @media screen and (min-width: 600px) {
+      .about-container p {
+        font-size: 20px;
+        padding-left: 15%;
+        padding-right: 15%; } }
+
+.font-italic {
+  line-height: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px;
+  font-style: italic;
+  padding-right: 10px;
+  color: #2d2d2d; }
+
+.font-bold {
+  line-height: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #2d2d2d;
+  font-size: 35px; }
+
+/* END OF ABOUT SECTION */
+/* SHOP SECTION BEGINS */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50rem;
+  padding-bottom: 170px; }
+  .shop-section a:hover {
+    color: #f5ebc6; }
+  @media screen and (min-width: 600px) {
+    .shop-section {
+      height: 30rem;
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 900px) {
+    .shop-section {
+      height: 50rem; } }
+
+.mens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(images/mens-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/mens-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/mens-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/mens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-bottom: 7px solid white; }
+
+.mens a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+.trends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/trends-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/trends-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/trends-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/trends-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white; }
+
+.trends a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+.glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/glasses-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/glasses-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/glasses-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/glasses-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-bottom: 7px solid white; }
+
+.glasses a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+.sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/sale-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/sale-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/sale-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/sale-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-right: 7px solid white;
+  border-bottom: 7px solid white; }
+
+.sale a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+.bags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  height: 25%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/bags-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/bags-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../images/bags-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/bags-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-bottom: 7px solid white; }
+
+.bags a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+.womens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../images/womens-category.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/womens-category.jpg);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/womens-category.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(images/womens-category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8);
+  border-bottom: 7px solid white; }
+
+.womens a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white; }
+
+/* END OF SHOP SECTION  */
+/* FEATURED PRODUCTS SECTION */
+.featured-products {
+  width: 100%;
+  text-align: center; }
+
+.featured-text-box {
+  padding-bottom: 30px; }
+
+.main-carousel {
+  padding-bottom: 100px;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.featured-products h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d7d7d7; }
+
+.featured-products p {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d7d7d7; }
+
+.featured-products h3 {
+  color: #e2574c;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 1.5rem; }
+
+.flickity-page-dots {
+  padding-bottom: 50px;
+  padding-right: 80px; }
+
+.add-to-cart-button {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 7px 13px; }
+
+.add-to-cart-button:hover {
+  background-color: #0f87a2;
+  cursor: pointer; }
+
+#itemCount {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  background-color: #e2574c;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  height: 20px;
+  width: 20px;
+  right: 70px;
+  top: 10px; }
+
+/* END OF FEATURED PRODUCTS SECTION */
+/* NEWSLETTER SECTION BEGINS */
+.updates {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.15))), url(../images/wave-bkgd.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../images/wave-bkgd.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../images/wave-bkgd.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  padding-top: 30px;
+  height: 300px; }
+
+.updates span {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(99, 99, 99, 0.8); }
+
+.updates p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2rem;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px; }
+
+.subscribe-form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto; }
+
+input[type="email"] {
+  height: 2.5rem;
+  width: 85%;
+  border-radius: 60px;
+  -webkit-box-shadow: inset 0;
+  box-shadow: inset 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 20px;
+  border: 0; }
+
+input[type="submit"] {
+  border-radius: 25px;
+  background-color: #e2574c;
+  color: white;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  right: 8.5%;
+  border: 0; }
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+input[type="submit"]:hover {
+  background-color: #b64036;
+  cursor: pointer; }
+
+/* NEWSLETTER SECTION ENDS */
+/* FOOTER BEGINS */
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: solid white 8px;
+  background-color: #242424;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.company-info {
+  display: block;
+  text-align: center;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem; }
+
+.company-info p {
+  color: #969696; }
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+
+.social-media span {
+  display: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding-left: 5px; }
+
+.social-media a {
+  text-decoration: none; }
+
+.social-media .fab {
+  width: 32px; }
+
+.company-info a:link {
+  color: white; }
+
+.company-info a:visited {
+  color: white; }
+
+.company-info a:hover {
+  color: #e2574c; }
+
+.company-info li {
+  margin-bottom: 15px; }
+
+.social-media a:link {
+  color: white; }
+
+.social-media a:visited {
+  color: white; }
+
+.social-media a:hover {
+  color: #e2574c; }
+
+/* FOOTER ENDS */
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .mens {
+    width: 50%;
+    height: 50%;
+    border-right: 7px solid white; }
+
+  .mens a {
+    font-size: 2rem; }
+
+  .trends {
+    width: 25%;
+    height: 50%; }
+
+  .trends a {
+    font-size: 2rem; }
+
+  .glasses {
+    width: 25%;
+    height: 50%; }
+
+  .glasses a {
+    font-size: 2rem; }
+
+  .sale {
+    width: 25%;
+    height: 50%; }
+
+  .sale a {
+    font-size: 2rem; }
+
+  .bags {
+    width: 25%;
+    height: 50%;
+    border-right: 7px solid white; }
+
+  .bags a {
+    font-size: 2rem; }
+
+  .womens {
+    width: 50%;
+    height: 50%; }
+
+  .womens a {
+    font-size: 2rem; }
+
+  /* END OF SHOP SECTION  */
+  /* FEATURED PRODUCTS SECTION */
+  .featured-products {
+    padding-top: 20px;
+    text-align: center; }
+
+  .featured-text-box {
+    padding-bottom: 70px; }
+
+  .main-carousel {
+    max-width: 1240px;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0; }
+
+  .carousel-cell {
+    width: 50%; }
+
+  /* END OF FEATURED PRODUCTS SECTION */
+  /* NEWSLETTER SECTION BEGINS */
+  .updates p {
+    font-size: 18px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 25px; }
+
+  /* NEWSLETTER SECTION ENDS */
+  /* FOOTER BEGINS */
+  .company-info {
+    display: block;
+    padding-left: 2rem;
+    text-align: justify; }
+
+  .social-media {
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-right: 4rem; }
+
+  .social-media span {
+    display: initial; }
+
+  /* FOOTER ENDS */ }
+@media screen and (min-width: 900px) {
+  /* FEATURED PRODUCTS SECTION */
+  .carousel-cell {
+    width: 25%; }
+
+  /* END OF FEATURED PRODUCTS SECTION */
+  /* FOOTER BEGINS */
+  .company-info {
+    padding-left: 10rem; }
+
+  .social-media {
+    padding-right: 10rem; }
+
+  /* END OF FOOTER */ }
+
+/*# sourceMappingURL=style.css.map */

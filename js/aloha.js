@@ -17,14 +17,24 @@ $(document).ready(function() {
   });
 
 
+  // Adding items to the shopping cart icon
   // found below on codepen https://codepen.io/Paul34/pen/oxQvEv 
+  
+  
   var itemCount = 0;
-
   $('.add-to-cart-button').click(function (){
+   
     itemCount ++;
     $('#itemCount').html(itemCount).css('display', 'block');
   }); 
 
+  // Removing items from cart on button click. Also re-setting the items# back to zero and removing the items count from the cart icon. 
+
+  $('#remove-items').on('click', function() {
+    itemCount = 0;
+    $('#itemCount').html('').css('display', 'none');
+
+});
 
 
 // Select all links with hashes
@@ -47,7 +57,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top -100
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
