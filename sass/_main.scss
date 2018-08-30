@@ -10,193 +10,7 @@ li {
   list-style-type: none;
 }
 
-/* NAV HEADER BEGINS */
 
-.fixed-nav {
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  @include tablet-size {
-    height: 80px;
-    flex-wrap: nowrap;
-  }
-
-
-}
-
-.logo-container {
-
-  width: 50%;
-  padding: 0.5rem;
-
-  @include tablet-size {
-    order: 1;
-    width: 25%;
-    padding-left: 15px;
-
-  }
-
-  @include desktop-size {
-    padding-left: 5rem;
-
-  }
-
-
-}
-
-.logo {
-
-  order: 1;
-  max-width: 120px;
-
-  @include desktop-size {
-    max-width: 170px;
-
-  }
-
- 
-}
-
-.cart-img-wrapper {
-
-  order: 2;
-  text-align: right;
-  width: 50%;
-  padding: 0.5rem;
-
-  @include tablet-size {
-    order: 3;
-    width: 25%;
-    padding-right: 15px;
-  }
-
-  @include desktop-size {
-    padding-right: 5rem;
-
-  }
-
-  img {
-    max-width: 50px;
-
-    @include desktop-size {
-      max-width: 65px;
-    }
-  }
-
-
-}
-
-
-.main-nav-menu {
-  order: 3;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-
-  margin: auto;
-  width: 100%;
-  padding: 2%;
-  border-top: 1px solid #eee;
-
-  a {
-    text-transform: uppercase;
-    color: #e2574c;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-
-    @include tablet-size {
-      padding-right: 1rem;
-    }
-
-    @include desktop-size {
-      padding-right: 2rem;
-    }
-  }
-
-  @include tablet-size {
-    order: 2;
-    border-top: none;
-    margin: auto;
-    width: 50%;
-    justify-content: center;
-    padding-left: 50px;
-
-  }
-
-}
-
-/* NAV HEADER ENDS */
-
-
-/* BANNER SECTION BEGINS */
-
-.banner {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-
-  background-size: contain, 150px, cover;
-  background-repeat: repeat, no-repeat, no-repeat;
-  background-position: center, center 150px, center;
-  height: 500px;
-
-  text-align: center;
-  color: white;
-
-
-  @include tablet-size {
-    background-size: cover, 250px, cover;
-    background-repeat: no-repeat;
-    background-position: center, center 160px, center;
-    height: 650px;
-  }
-}
-
-
-.banner-collection {
-  font-size: 25px;
-  padding-top: 270px;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-
-  @include tablet-size{
-    font-size: 25px;
-    padding-top: 330px;
-    font-size: 20px;
-  }
-  
-}
-
-.banner-season {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: 42px;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-
-  @include tablet-size{
-    display: block;
-    font-size: 60px;
-  }
-}
-
-/* END OF BANNER SECTION */
 
 /* ABOUT SECTION BEGINS */
 
@@ -208,536 +22,172 @@ li {
   padding-right: 1%;
   padding-top: 75px;
 
-  @include tablet-size {
-    text-align: center;
-    width: 100%;
-  }
-
   p {
     line-height: 30px;
     font-size: 15px;
-    font-family: "Raleway", sans-serif;
+    font-family: $main-font;
     font-weight: 300;
     font-style: normal;
-    color: #2d2d2d;
+    color: $body-font-color;
 
     @include tablet-size {
       font-size: 20px;
       padding-left: 15%;
       padding-right: 15%;
-
     }
-
   }
 }
 
 .font-italic {
   line-height: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: $second-font;
   font-weight: normal;
   font-style: normal;
   font-size: 35px;
   font-style: italic;
   padding-right: 10px;
-  color: #2d2d2d;
-
-
+  color: $body-font-color;
 }
 
 .font-bold {
   line-height: 16px;
-  font-family: "Playfair Display", serif;
+  font-family: $second-font;
   font-weight: bold;
   font-style: normal;
-  color: #2d2d2d;
+  color: $body-font-color;
   font-size: 35px;
 }
 
 /* END OF ABOUT SECTION */
 
-/* SHOP SECTION BEGINS */
-
-.shop-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50rem;
-  padding-bottom: 170px;
-
-  a:hover {
-    color: #f5ebc6;
-  }
-
-  @include tablet-size {
-    height: 30rem;
-    padding-bottom: 50px;
-  }
-
-  
-  @include desktop-size {
-    height: 50rem;
-  }
-
-
-
-
-}
-
-.mens {
-
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  width: 100%;
-  height: 35%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(images/mens-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/mens-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/mens-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/mens-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-bottom: 7px solid white;
-}
-
-.mens a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.trends {
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 50%;
-  height: 25%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(../images/trends-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/trends-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/trends-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/trends-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-right: 7px solid white;
-  border-bottom: 7px solid white;
-}
-
-.trends a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.glasses {
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 50%;
-  height: 25%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(../images/glasses-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/glasses-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/glasses-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/glasses-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-bottom: 7px solid white;
-}
-
-.glasses a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.sale {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 50%;
-  height: 25%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(../images/sale-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/sale-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/sale-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/sale-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-right: 7px solid white;
-  border-bottom: 7px solid white;
-}
-
-.sale a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.bags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 50%;
-  height: 25%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(../images/bags-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/bags-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(../images/bags-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/bags-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-bottom: 7px solid white;
-}
-
-.bags a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-.womens {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 35%;
-
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0, rgba(0, 0, 0, 0.25)),
-      to(rgba(0, 0, 0, 0.25))
-    ),
-    url(../images/womens-category.jpg);
-
-  background-image: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/womens-category.jpg);
-
-  background-image: -o-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/womens-category.jpg);
-
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.25) 0,
-      rgba(0, 0, 0, 0.25)
-    ),
-    url(images/womens-category.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-style: normal;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  border-bottom: 7px solid white;
-}
-
-.womens a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-
-
-/* END OF SHOP SECTION  */
 
 /* FEATURED PRODUCTS SECTION */
 
 .featured-products {
   width: 100%;
   text-align: center;
+
+  @include tablet-size {
+    padding-top: 20px;
+
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 500;
+    font-style: normal;
+    color: $lighter-text;
+  }
+
+  h3 {
+    color: $brand-color;
+    font-family: $second-font;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 500;
+    font-style: normal;
+    color: $lighter-text;
+  }
 }
 
 .featured-text-box {
   padding-bottom: 30px;
+
+  @include tablet-size {
+    padding-bottom: 70px;
+  }
 }
 
 .main-carousel {
   padding-bottom: 100px;
-  padding-right: 50px;
-  padding-left: 50px;
+  margin: 0 auto;
+
+  @include tablet-size {
+    max-width: 1240px;
+  }
+
+  .carousel-cell {
+    width: 100%;
+
+    @include tablet-size {
+      width: 50%;
+    }
+
+    @include desktop-size {
+      width: 25%; 
+    }
+  }
+
+  .flickity-button {
+    margin: -10px;
+  }
+
+  .flickity-page-dots {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
 }
 
-.featured-products h2 {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #d7d7d7;
-}
 
-.featured-products p {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #d7d7d7;
-}
-
-.featured-products h3 {
-  color: #e2574c;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-
-.flickity-page-dots {
-  padding-bottom: 50px;
-  padding-right: 80px;
-}
-
-.add-to-cart-button {
+.add-to-cart-button,
+.remove-items {
   background-color: black;
   border-radius: 50px;
-  color: white;
-  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-family: $main-font;
   font-weight: 500;
   font-size: 0.8rem;
-  padding: 7px 13px;
+  padding: 7px 20px;
+  border: none;
+
+  &:hover {
+    background-color: #0f87a2;
+    cursor: pointer;
+  }
 }
 
-.add-to-cart-button:hover {
-  background-color: #0f87a2;
-  cursor: pointer;
+.remove-items {
+  transition: 0.4s;
+
+  @include desktop-size {
+    margin-left: 20px;
+  }
 }
 
 #itemCount {
-  font-family: "Raleway", sans-serif;
+  font-family: $main-font;
   font-weight: 500;
-  background-color: #e2574c;
   color: #fff;
   text-align: center;
+
+  background-color: $brand-color;
   border-radius: 50%;
   position: absolute;
   display: none;
+
   height: 20px;
   width: 20px;
-  right: 70px;
-  top: 10px;
+  right: 5px;
+  top: 5px;
+
+  @include desktop-size {
+    right: 17rem;
+    top: 10px;
+  }
 }
 
 /* END OF FEATURED PRODUCTS SECTION */
 
+
 /* NEWSLETTER SECTION BEGINS */
 
 .updates {
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.15)),
-      to(rgba(0, 0, 0, 0.15))
-    ),
-    url(../images/wave-bkgd.jpg);
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.15),
-      rgba(0, 0, 0, 0.15)
-    ),
-    url(../images/wave-bkgd.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(../images/wave-bkgd.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(images/wave-bkgd.jpg);
   background-repeat: no-repeat;
@@ -745,333 +195,78 @@ li {
   text-align: center;
   padding-top: 30px;
   height: 300px;
-}
 
-.updates span {
-  color: white;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-}
+  span {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
+  }
 
-.updates p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 2rem;
-  color: white;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
+  p {
+    font-family: $main-font;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 2rem;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+
+    @include tablet-size {
+      font-size: 18px;
+      padding-left: 18%;
+      padding-right: 18%;
+    }
+  }
 }
 
 .subscribe-form {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
-}
 
-input[type="email"] {
-  height: 2.5rem;
-  width: 85%;
+  input[type="email"] {
+    height: 2.5rem;
+    width: 85%;
+  
+    border-radius: 60px;
+    box-shadow: inset 0;
+  
+    font-family: $main-font;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 20px;
+    border: 0;
+  }
+  
+  input[type="submit"] {
+    border-radius: 25px;
+    background-color: $brand-color;
+    color: #ffffff;
+  
+    font-weight: bold;
+    font-family: $main-font;
+    font-weight: 500;
+    font-style: normal;
+  
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    right: 8.5%;
+    border: 0;
 
-  border-radius: 60px;
-  -webkit-box-shadow: inset 0;
-  box-shadow: inset 0;
-
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  padding-left: 20px;
-  border: 0;
-}
-
-input[type="submit"] {
-  border-radius: 25px;
-  background-color: #e2574c;
-  color: white;
-
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-
-  padding: 0.5rem 1.5rem;
-  position: absolute;
-  right: 8.5%;
-  border: 0;
+    &:hover {
+      background-color: #b64036;
+      cursor: pointer;
+    }
+  }
 }
 
 .email {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-input[type="submit"]:hover {
-  background-color: #b64036;
-  cursor: pointer;
-}
 
 /* NEWSLETTER SECTION ENDS */
 
-/* FOOTER BEGINS */
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
-  border-top: solid white 8px;
-  background-color: #242424;
-  color: white;
-
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.company-info {
-  display: block;
-  text-align: center;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem;
-}
-
-.company-info p {
-  color: #969696;
-}
-
-.social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.social-media span {
-  display: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  padding-left: 5px;
-}
-
-.social-media a {
-  text-decoration: none;
-}
-
-.social-media .fab {
-  width: 32px;
-}
-
-.company-info a:link {
-  color: white;
-}
-
-.company-info a:visited {
-  color: white;
-}
-
-.company-info a:hover {
-  color: #e2574c;
-}
-
-.company-info li {
-  margin-bottom: 15px;
-}
-
-.social-media a:link {
-  color: white;
-}
-
-.social-media a:visited {
-  color: white;
-}
-
-.social-media a:hover {
-  color: #e2574c;
-}
-
-/* FOOTER ENDS */
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 600px) {
-
-
-
-
-
-
-
-  .mens {
-    width: 50%;
-    height: 50%;
-    border-right: 7px solid white;
-  }
-
-  .mens a {
-    font-size: 2rem;
-  }
-
-  .trends {
-    width: 25%;
-    height: 50%;
-  }
-
-  .trends a {
-    font-size: 2rem;
-  }
-
-  .glasses {
-    width: 25%;
-    height: 50%;
-  }
-
-  .glasses a {
-    font-size: 2rem;
-  }
-
-  .sale {
-    width: 25%;
-    height: 50%;
-  }
-
-  .sale a {
-    font-size: 2rem;
-  }
-
-  .bags {
-    width: 25%;
-    height: 50%;
-    border-right: 7px solid white;
-  }
-
-  .bags a {
-    font-size: 2rem;
-  }
-
-  .womens {
-    width: 50%;
-    height: 50%;
-  }
-
-  .womens a {
-    font-size: 2rem;
-  }
-
-  /* END OF SHOP SECTION  */
-
-  /* FEATURED PRODUCTS SECTION */
-
-  .featured-products {
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .featured-text-box {
-    padding-bottom: 70px;
-  }
-
-  .main-carousel {
-    max-width: 1240px;
-    margin: auto;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .carousel-cell {
-    width: 50%;
-  }
-
-  /* END OF FEATURED PRODUCTS SECTION */
-
-  /* NEWSLETTER SECTION BEGINS */
-
-  .updates p {
-    font-size: 18px;
-    padding-left: 18%;
-    padding-right: 18%;
-    padding-bottom: 25px;
-  }
-
-  /* NEWSLETTER SECTION ENDS */
-
-  /* FOOTER BEGINS */
-
-  .company-info {
-    display: block;
-    padding-left: 2rem;
-    text-align: justify;
-  }
-
-  .social-media {
-    margin-left: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding-right: 4rem;
-  }
-
-  .social-media span {
-    display: initial;
-  }
-
-  /* FOOTER ENDS */
-}
-
-@media screen and (min-width: 900px) {
-
-
-  /* FEATURED PRODUCTS SECTION */
-
-  .carousel-cell {
-    width: 25%;
-  }
-
-  /* END OF FEATURED PRODUCTS SECTION */
-
-  /* FOOTER BEGINS */
-
-  .company-info {
-    padding-left: 10rem;
-  }
-
-  .social-media {
-    padding-right: 10rem;
-  }
-  /* END OF FOOTER */
-}
